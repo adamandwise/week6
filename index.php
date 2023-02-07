@@ -27,6 +27,9 @@ $f3 -> route('GET /', function($f3){
 
     $f3->set('colors',array("red","blue","green"));
 
+    $cupcakes = array("chocolate"=>"Chocolate Ganache","strawberry"=>"Strawberry Shortcake","maple"=>"Maple Walnut");
+    $f3->set('cupcakes',$cupcakes);
+
 
     //instantiate a view
     $view = new Template();
